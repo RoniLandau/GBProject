@@ -1,6 +1,16 @@
 # GBProject
-php version - 8.0.30
-Apache server 
-MySQL :
-Config your DB inside app/config/database.php 
-You should have a table called users with the structure - Username,Email,Password,Birthdate,Phone_number,URL/
+
+## Requirements
+- PHP version: 8.0.30
+- Apache server
+- MySQL
+
+## Configuration
+1. Configure your database settings inside `app/config/database.php`.
+2. Ensure you have a table named `users` with the following structure:
+   - Username
+   - Email
+   - Password
+   - Birthdate
+   - Phone_number
+   - URL
