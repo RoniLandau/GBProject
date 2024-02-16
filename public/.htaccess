@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+
+# RewriteEngine On turns on the rewrite engine.
+#     RewriteCond %{REQUEST_FILENAME} !-f ensures that the rule does not apply if the requested filename exists as a regular file.
+#     RewriteCond %{REQUEST_FILENAME} !-d ensures that the rule does not apply if the requested filename exists as a directory.
+#     RewriteRule ^ index.php [QSA,L] redirects all requests to index.php, preserving query string parameters ([QSA]) and stopping further processing ([L]).
